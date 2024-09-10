@@ -1,11 +1,7 @@
 # About Me
 
-![](../images/about/ConnorPicture1.JPG)
+Hello. I am Connor Cruz! 
 
-![](../images/about/ConnorPicture2.jpeg)
+I love mathematics, and I spend much of my free time applying these in fun personal projects. Recently, I have been learning some abstract algebra, and I hope to use that to gain understanding in Galois Theory eventually. I have previously studied Gödel's Incompleteness Theorems using Smullyan, and I have also learned a small amount of Real Analysis.
 
-Hello. I am Connor Cruz! I am a sophomore at Charlotte Latin School, and this is my Fab Academy Documentation. I grew up in Charlotte, North Carolina, but my family and I are from Guam.
-
-Some of my interests include coding and learning mathematics in my free time. For coding, I have learnt several languages (some being C++, Java, Python, and JS). I've also developed some games using game engines such as Unity and Godot. In terms of math, I enjoy learning many different subjects and am currently researching Godel's Incompleteness Theorems in depth. I am a big fan of set theory, and specifically abstract algebra, but I also enjoy learning topics in the realm of Analysis.
-
-I have always been fascinated about how things work in the world, so I hope that Fab Academy can broaden my understanding.
+I also really love programming! Since a very young age, I have always been fascinated about how video games and general computer programs were made. I started attempting game development at roughly 6 years old and primarily used JavaScript at 10. From then, I have learned C++ and C# for Unity, as well as Java for general use. I also wish to learn Godot as an alternative to Unity, and I want to learn Rust due to its future promise.
