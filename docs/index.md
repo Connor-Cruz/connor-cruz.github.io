@@ -1,13 +1,16 @@
 # Home
 
-## Connor Cruz Fab Academy Site
+## Connor Cruz Digital Portfolio
 
-This is my Fab Academy site. You can navigate the site using the navigation bar on the side.
+Below, you can find several of my projects!
 
-## Final Project Slide and Video
+## Super Ultimate Tic-Tac-Toe
 
-![](./presentation.png)
+You can find this project [here](https://connor-cruz.github.io/Super-Ultimate-Tic-Tac-Toe/).
 
-<center>
-<video width="700" controls><source src="./presentation.mp4" type="video/mp4"/>The video is not supported in your browser.</video>
-</center>
+Do you ever think that traditional tic-tac-toe is boring and that you already know everything that it has in store? Then this game is perfect for you! It takes traditional tic-tac-toe and extends it into 2 extra dimensions, placing a mini tic-tac-toe board in each individual square. Depending on the square where the player places a marker in a mini board, the next player must place their marker in the corresponding square in the large board to the mini board. Have fun strategizing! Any conjectures?
+
+## Memory App for Those with Dementia (Name Later)
+
+You can find this project [here](../docs/projects/app-design.md).
+INSERT DETAILS
