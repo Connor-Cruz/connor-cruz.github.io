@@ -1,0 +1,1434 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Project documentation for Connor Cruz">
+      
+      
+        <meta name="author" content="Connor Cruz">
+      
+      
+        <link rel="canonical" href="https://connor-cruz.github.io/assignments/week07/">
+      
+      
+        <link rel="prev" href="../week06/">
+      
+      
+        <link rel="next" href="../week08/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.5">
+    
+    
+      
+        <title>7. Computer Controlled Machining - Connor Cruz - Digital Portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#7-computer-controlled-machining" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Connor Cruz - Digital Portfolio" class="md-header__button md-logo" aria-label="Connor Cruz - Digital Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Connor Cruz - Digital Portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7. Computer Controlled Machining
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Connor Cruz - Digital Portfolio" class="md-nav__button md-logo" aria-label="Connor Cruz - Digital Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Connor Cruz - Digital Portfolio
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Me
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/agreement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fab Academy Student Agreement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Assignments
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Assignments
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Principles and Practices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Computer Aided Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Computer Controlled Cutting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Electronics Production
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. 3D Scanning and Printing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Embedded Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    7. Computer Controlled Machining
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    7. Computer Controlled Machining
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cam-design-in-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      CAM Design in Fusion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CAM Design in Fusion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idea-and-basic-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      Idea and Basic Render
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#piece-and-joint-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Piece and Joint Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#designing-in-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designing in Fusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cam-toolpath-with-aspire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cam Toolpath with Aspire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cam Toolpath with Aspire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exporting-from-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporting from Fusion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importing-into-aspire-and-dog-bones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing into Aspire and Dog-Bones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generating-cam-toolpath-for-mortises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generating CAM Toolpath for Mortises
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cam-toolpath-for-outlines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cam Toolpath for Outlines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-shopbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the ShopBot
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the ShopBot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixturing-the-wood" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixturing the Wood
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#air-cut" class="md-nav__link">
+    <span class="md-ellipsis">
+      Air Cut
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actual-cut" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actual Cut
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembling-the-shelf-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembling the Shelf-Table
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assembling the Shelf-Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#refining-the-pieces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refining the Pieces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joint-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Joint Problem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembly
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-portion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group Portion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Credits
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week08/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Electronics Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week09/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Output Devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Mechanical Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Input Devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Molding and Casting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13. Networking and Communications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week14/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. Interface and Application Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. Wildcard Week
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week16/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16. Applications and Implications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week17/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    17. Project Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week18/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. Invention, Intellectual Property, and Income
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Projects
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/final-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Final Project - Na&rsquo;danña&rsquo; Guam
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cam-design-in-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      CAM Design in Fusion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CAM Design in Fusion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idea-and-basic-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      Idea and Basic Render
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#piece-and-joint-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Piece and Joint Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#designing-in-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designing in Fusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cam-toolpath-with-aspire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cam Toolpath with Aspire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cam Toolpath with Aspire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exporting-from-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporting from Fusion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importing-into-aspire-and-dog-bones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing into Aspire and Dog-Bones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generating-cam-toolpath-for-mortises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generating CAM Toolpath for Mortises
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cam-toolpath-for-outlines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cam Toolpath for Outlines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-shopbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the ShopBot
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the ShopBot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixturing-the-wood" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixturing the Wood
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#air-cut" class="md-nav__link">
+    <span class="md-ellipsis">
+      Air Cut
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actual-cut" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actual Cut
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembling-the-shelf-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembling the Shelf-Table
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assembling the Shelf-Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#refining-the-pieces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refining the Pieces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joint-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Joint Problem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembly
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-portion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group Portion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Credits
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="7-computer-controlled-machining">7. Computer Controlled Machining<a class="headerlink" href="#7-computer-controlled-machining" title="Permanent link">&para;</a></h1>
+<p>This week I worked on using the large CNC machine to create a big object.</p>
+<p>You can find the files used this week <a href="../../files/Week07-Files.zip">here</a>.</p>
+<h2 id="cam-design-in-fusion">CAM Design in Fusion<a class="headerlink" href="#cam-design-in-fusion" title="Permanent link">&para;</a></h2>
+<p>I used Fusion to design my object because I could easily create a 3D model based on the sketches that I drew.</p>
+<h3 id="idea-and-basic-render">Idea and Basic Render<a class="headerlink" href="#idea-and-basic-render" title="Permanent link">&para;</a></h3>
+<p>I wanted to design a basic table that could also function as a shelf. I planned to add joints to the design and not use any adhesive or screws, so I first created a rough 3D model of the design without any of the joints to show points of overlap and how the table would generally fit together.</p>
+<p><img alt="" src="../../images/week07/Week07-Fusion-NoJoint.jpg" /></p>
+<h3 id="piece-and-joint-planning">Piece and Joint Planning<a class="headerlink" href="#piece-and-joint-planning" title="Permanent link">&para;</a></h3>
+<p>I planned to ultimately use two types of joints with my project: mortise and tenon joints and finger joints. I feel that mortise and tenon joints can provide a strong connection when on all sides, even without glue or screws. I will also use the finger joints primarily for the corners that I want to be flat (such as the back side corners).</p>
+<h3 id="designing-in-fusion">Designing in Fusion<a class="headerlink" href="#designing-in-fusion" title="Permanent link">&para;</a></h3>
+<p>I first created some parameters so that I could change the dimensions of anything in the design if I wanted to. Here is the list of parameters and their initial values (will be changed later).</p>
+<p><img alt="" src="../../images/week07/Week07-Fusion-Parameters.jpg" /></p>
+<p>I then created a sketch for each of the sides as I intended in my paper sketch. Once all of the sketches were finished, I extruded them as separate bodies from each other to see if there was any overlap or any joints that did not fit. I had quite a few inaccurately placed joints here because I forgot to account for wood with in a couple of my calculations. I fixed everything up until the 3D model looked good.</p>
+<p><img alt="" src="../../images/week07/Week07-Fusion-3DView.jpg" /></p>
+<p>Once I got everything done, I changed the values of the parameters and the model scaled successfully.</p>
+<h2 id="cam-toolpath-with-aspire">Cam Toolpath with Aspire<a class="headerlink" href="#cam-toolpath-with-aspire" title="Permanent link">&para;</a></h2>
+<h3 id="exporting-from-fusion">Exporting from Fusion<a class="headerlink" href="#exporting-from-fusion" title="Permanent link">&para;</a></h3>
+<p>To convert my Fusion file into a vector file, I first needed to find a way to flatten all of my extruded objects so that they could all be projected into a singular sketch. </p>
+<p>Mr. Budzichowski recommended <a href="https://fabacademy.org/2023/labs/charlotte/students/zack-budzichowski/assignments/week07/">his documentation</a> for this, in which he used the &ldquo;Arrange&rdquo; tool. This tool takes a set of components and flattens them all onto a 2D plane of a specific size.</p>
+<p>Once I got all of the objects flattened, I then created a new sketch on the same plane and projected those objects into the sketch. Finally, I exported a <strong>.dxf</strong> file containing the sketch lines.</p>
+<p><img alt="" src="../../images/week07/Week07-Fusion-Arrange.jpg" /></p>
+<h3 id="importing-into-aspire-and-dog-bones">Importing into Aspire and Dog-Bones<a class="headerlink" href="#importing-into-aspire-and-dog-bones" title="Permanent link">&para;</a></h3>
+<p>In Vectric Aspire, I created a new document. I set its width to 4ft and length to 2ft and set no offset for the origin. I also wanted to cut with a Z Zero position at the machine bed. I then obtained my .dxf file fom earlier and imported it into Aspire. </p>
+<p>Next, I created dog-bone fillets at each corner where it was necessary. I originally planned to use the 3/8&rdquo; tool in our lab for everythin0g in the design, but I realized that it would not fit fully inside of the mortise cutouts. Therefore, I used the 1/8&rdquo; tool as well. My instructors stated that my dog-bone fillets should not be a smaller radius than that of the tool we used (need to divide the diameter by 2). To keep it safe, I made my fillets roughly 0.05-0.1 inches larger.</p>
+<p>Here is the edited vector in Aspire:</p>
+<p><img alt="" src="../../images/week07/Week07-Aspire-Vector.jpg" /></p>
+<h3 id="generating-cam-toolpath-for-mortises">Generating CAM Toolpath for Mortises<a class="headerlink" href="#generating-cam-toolpath-for-mortises" title="Permanent link">&para;</a></h3>
+<p>Next, I needed to create the CAM toolpaths for each closed shape that I intended to cut.</p>
+<p>I first wanted to create the toolpath for my mortises. I decided to make these pocket cuts since they were small and I did not want to secure them with tabs. I ensured that I set my tool to the 1/8&rdquo; straight tool.</p>
+<p>For this toolpath, even though I had a sacrificial layer, I set the cut depth to 0.45 in (the actual measurement of my selected peice of wood). I made 4 passes (as not to exceed the diameter of the tool for each pass) and set the direction of the cut to &ldquo;Climb&rdquo; because I wanted a slightly cleaner cut.</p>
+<p>I pressed &ldquo;Calculate&rdquo; to generate the toolpath, and I reviewed the simulation of it running. There were no apparent problems in the simulation. (See these in next section)</p>
+<h3 id="cam-toolpath-for-outlines">Cam Toolpath for Outlines<a class="headerlink" href="#cam-toolpath-for-outlines" title="Permanent link">&para;</a></h3>
+<p>For my outlines, I needed to use a profile cut to cut only along the outlines.</p>
+<p>I set the cut depth to 0.45 in for this cut as well, and I set my tool to the 3/8&rdquo; compression spiral. I also only needed 2 passes for this, since each pass would only be approximately 0.225 inches, which is less than 3/8 of an inch.</p>
+<p>I added four tabs to each outline so that the wood would not detach during the milling process. I also made sure to set the cut type to &ldquo;Outline&rdquo; since I wanted to keep my pieces constant with how I designed them in Fusion (and make the tenons large enough to fit in the mortises).</p>
+<p>I calculated this toolpath as well, and I ran its simulation along with the pocket cut (I made the pocket cut first to avoid the wood moving while cutting them). Nothing went badly, so I exported my toolpaths as a single <strong>.sbp</strong> file for cutting, since I would be using a large ShopBot.</p>
+<p>Here are both of the toolpaths:</p>
+<p><img alt="" src="../../images/week07/Week07-Aspire-Toolpaths.jpg" /></p>
+<p>Here is the finished simulation of the toolpaths:</p>
+<p><img alt="" src="../../images/week07/Week07-Aspire-Simulation.jpg" /></p>
+<h2 id="using-the-shopbot">Using the ShopBot<a class="headerlink" href="#using-the-shopbot" title="Permanent link">&para;</a></h2>
+<p>Throughout the process of cutting, I followed <a href="https://docs.google.com/document/d/13KMj7j8VIOVJ1x5KJyU1tCYY6a3ldDfN6Uc6bT5ok20">my lab&rsquo;s workflow</a> on how to use the ShopBot CNC Machine. Since someone had already used the machine before me on that day, I did not need to run the Start of Day routine (and the End of Day routine as well).</p>
+<p>The machine also automatically changes its bit when necessary, so I did not need to manually install a bit.</p>
+<video width="640" height="360" muted controls><source src="../../videos/week07/Week07-CNC-BitChange.mp4" type="video/mp4"/>The video is not supported in your browser.</video>
+
+<h3 id="fixturing-the-wood">Fixturing the Wood<a class="headerlink" href="#fixturing-the-wood" title="Permanent link">&para;</a></h3>
+<p>Before I could start, I wanted to secure my piece of wood to the bed of the machine. I used a brad gun to apply brad nails across the entirety of my board. I made sure to add them on the edges and where there was free space on the middle of the board. I did not add enough in the middle of the board, however, which would be found out later.</p>
+<p><img alt="" src="../../images/week07/Week07-CNC-Surface.JPG" /></p>
+<h3 id="air-cut">Air Cut<a class="headerlink" href="#air-cut" title="Permanent link">&para;</a></h3>
+<p>I used the ShopBot software to control the CNC machine.</p>
+<p>To initialize the air cut, I jogged the Z-Axis to 1 inch above my board (Z = 1.45) and set that as the new Z-Zero. This would allow me to run a test cut of my design and check if everything with the toolpath worked well. Before I did this, I applied the dust skirt to the bit in order to </p>
+<p>I loaded my file onto the ShopBot software, and I pressed the physical &ldquo;START&rdquo; button to begin spinning the bit. I then proceeded to run the cut. The cut did the pockets first, so I watched it simulate roughly 5 of them. Since nothing was unusual, I stopped the air cut and proceeded to the actual cut.</p>
+<p>Height of the air cut above the material:</p>
+<p><img alt="" src="../../images/week07/Week07-CNC-AirCut.JPG" /></p>
+<h3 id="actual-cut">Actual Cut<a class="headerlink" href="#actual-cut" title="Permanent link">&para;</a></h3>
+<p>I used the C3 command to reset the Z-Zero and home the ShopBot. Next, I loaded my file once again, pressed the &ldquo;START&rdquo; button to spin the bit, and ran the cut. </p>
+<p>The pockets seemed to be cutting out very well on the first part of the cut, but when the tool got closer to the middle of the board, the pockets did not cut entirely fully. When I looked back at where I placed the brads, I realized that I probably should have placed another one in the middle of the board, so the wood was likely raised there because of that.</p>
+<p>Video of a pocket cut:</p>
+<video width="640" height="360" muted controls><source src="../../videos/week07/Week07-CNC-PocketCut.mp4" type="video/mp4"/>The video is not supported in your browser.</video>
+
+<p>When it came time to change the bit, the bit was successfully changed, but the dust skirt fell off. I needed to stop the job in order to place it back on since the tool was too low. I jogged the tool up the Z-Axis and placed the skirt back on. Since this was already the end of the pocket cut, I decided to import a new SBP file with just the profile cuts into the ShopBot software since I could not resume the job once it was stopped.</p>
+<p>The profile cuts had the same problem as the pocket cuts: they did not cut fully through at the middle of the board. I decided to simply let the job continue since trying to secure the middle would cause inconsistencies with joint placements.</p>
+<p>One of the profile cuts:</p>
+<p><img alt="" src="../../images/week07/Week07-CNC-Profile.JPG" /></p>
+<p>Below is an image of the finished job:</p>
+<p><img alt="" src="../../images/week07/Week07-CNC-FinishCut.JPG" /></p>
+<p>Once the job was done, I used a multitool to remove the tabs and cut through the parts that were not fully cut through.</p>
+<h2 id="assembling-the-shelf-table">Assembling the Shelf-Table<a class="headerlink" href="#assembling-the-shelf-table" title="Permanent link">&para;</a></h2>
+<p>All of the wood pieces:</p>
+<p><img alt="" src="../../images/week07/Week07-Assembly-Pieces.JPG" /></p>
+<h3 id="refining-the-pieces">Refining the Pieces<a class="headerlink" href="#refining-the-pieces" title="Permanent link">&para;</a></h3>
+<p>After being removed from the board, the pieces had frayed edges and still had some parts of the tabs remaining. To fix this, I first used the multitool to cut off all parts of the tabs. I also used a dremel to get rood of any excess wood on the edges.</p>
+<h3 id="joint-problem">Joint Problem<a class="headerlink" href="#joint-problem" title="Permanent link">&para;</a></h3>
+<p>When I tried testing if one of my pairs of joints would fit together, I noticed that the tenons were very slightly too big to fit. This was a very big problem since I had more than 20 of these joints in my entire design. Mr. Budzichowski gave the suggestion that I could sand down the edges of the tenons to make a ramp fit. This would allow me to partly push together the joints and use a mallet to join them together. However, this comes at the cost of not being able to take apart the joined pieces of wood.</p>
+<p>At the suggestion of Dr. Taylor, I also used a piece of sandpaper attached to a multitool to sand the insides of the mortises. After a couple of hours sanding each piece and seeing if their respective joints could fit together, I was eventually ready to assemble my table.</p>
+<h3 id="assembly">Assembly<a class="headerlink" href="#assembly" title="Permanent link">&para;</a></h3>
+<p>I started by attaching the shelves and flap cover to the back cover of the shelf since that is the innermost part of the design. I pushed the shelves in as much as I could with my hands. Then, I obtained a mallet and a piece of hardwood. I placed the hardwood wherever I wanted to hit in order to ensure that my wood would not break due to the mallet&rsquo;s pressure.</p>
+<p>The hardest part the assembly came once I fully inserted the shelves and flap cover into the back cover. I had to somehow fit the side pieces onto the shelves, which required fitting 3 separate pieces and 6 total joints. I also needed to deal with the finger joints at one edge of the side pieces.</p>
+<p><img alt="" src="../../images/week07/Week07-Assembly-Annoying.JPG" /></p>
+<p>I needed to slightly sand down the tenon connected to the middle shelf since it was not pushed in as far as the other pieces. This could have been due to a multitude of factors, but I suspect that I had accidentally left a small amount of the tabs on it.</p>
+<p>I struggled trying to get all of the three shelf pieces to fit in the side piece at the same time. Dr. Taylor suggested that I instead slightly push the side piece into one of the shelves and do the same for each of the pieces. This would make it so that the side piece would not bend so much that part of it would be pushed out when further using the mallet.</p>
+<p>Eventually, with enough trial-and-error, I was able to get the first side on. The second side followed a similar process, but it was slightly easier since the shelves were already mostly fixed in place.</p>
+<p><img alt="" src="../../images/week07/Week07-Assembly-Sides.JPG" /></p>
+<p>I then added the front flap of my design, which was not too hard since I was only joining two separate pieces of wood with only two joints.</p>
+<p>Adding the top piece was also quite hard since all of the slight imperfections made in my design beforehand caused a fairly significant offset in the joints. I decided to use two adjacent tenons as a reference for what parts I needed to sand. I only needed to sand some of the finger joints a very slight amount since the offset between the front flap and back cover was not too significant. However, the offset between the two sets of joints from the side covers was quite bad. I had to sand down the tenons (not used for reference) a fairly large amount, but they eventually fit into their designated mortises.</p>
+<p>I used the same process as I did for the sides to insert the two separate joint pairs together.</p>
+<p>Once the top cover was placed, my entire table was finished!</p>
+<p><img alt="" src="../../images/week07/Week07-Assembly-Top.JPG" /></p>
+<video width="640" height="360" muted controls><source src="../../videos/week07/Week07-Assembly-Final.mp4" type="video/mp4"/>The video is not supported in your browser.</video>
+
+<p>The table was also very strong since there was little to no extra space between the mortises and tenons after using the mallet to push them together.</p>
+<h2 id="group-portion">Group Portion<a class="headerlink" href="#group-portion" title="Permanent link">&para;</a></h2>
+<p>In this week, I worked with Angelina Yang and Kabir Nawaz. Our documentation can be found <a href="https://fabacademy.org/2024/labs/charlotte/assignments/week07c/">here</a>.</p>
+<p>Our group assignment this week was primarily to test various factors for our lab&rsquo;s CNC machine.</p>
+<p>I helped to test the different tools in the lab and some of the different fixturing methods. Everyone in the group also contributed to testing runout.</p>
+<h2 id="reflection">Reflection<a class="headerlink" href="#reflection" title="Permanent link">&para;</a></h2>
+<p>This week was probably the hardest week of Fab Academy so far. The entire process of designing something that should be able to be held together with joints alone (no glue or screws), converting it to a CAM toolpath, cutting the toolpath, and sanding down every one of my joints took a large amount of time and was very tedious to do. From this, however, I was able to learn some things to be very aware of when using the CNC machine. When using this machine in the future, I need to account better for the tolerance of the machine by adding a larger offset between the mortises and tenons than I previously had. Also, even if there is not much space to do it, I should try my best to add brads (or whatever fixturing tools) to large areas in my material where there are not any others. Overall, I made quite a few mistakes this week that I will take to heart whenever using my lab&rsquo;s ShopBot or any other large CNC machine.</p>
+<h2 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h2>
+<p>Thanks to Mr. Budzichowski and Dr. Taylor for giving suggestions and helping me figure out how to assemble my table. All other credits are mentioned where they are used respectively.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2024 Connor Cruz - Creative Commons Attribution Non Commercial
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c18c5fb9.min.js"></script>
+      
+    
+  </body>
+</html>
