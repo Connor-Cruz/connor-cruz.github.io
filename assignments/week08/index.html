@@ -1,0 +1,1219 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Project documentation for Connor Cruz">
+      
+      
+        <meta name="author" content="Connor Cruz">
+      
+      
+        <link rel="canonical" href="https://connor-cruz.github.io/assignments/week08/">
+      
+      
+        <link rel="prev" href="../week07/">
+      
+      
+        <link rel="next" href="../week09/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.5">
+    
+    
+      
+        <title>8. Electronics Design - Connor Cruz - Digital Portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#8-electronics-design" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Connor Cruz - Digital Portfolio" class="md-header__button md-logo" aria-label="Connor Cruz - Digital Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Connor Cruz - Digital Portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8. Electronics Design
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Connor Cruz - Digital Portfolio" class="md-nav__button md-logo" aria-label="Connor Cruz - Digital Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Connor Cruz - Digital Portfolio
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Me
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/agreement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fab Academy Student Agreement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Assignments
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Assignments
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Principles and Practices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Computer Aided Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Computer Controlled Cutting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Electronics Production
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. 3D Scanning and Printing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Embedded Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week07/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Computer Controlled Machining
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    8. Electronics Design
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    8. Electronics Design
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#personal-pcb-board-design-in-kicad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal PCB Board Design in Kicad
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Personal PCB Board Design in Kicad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pcb-desired-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Desired Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schematic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#footprint-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footprint Assignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-design-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Design Layout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      Physical Board
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Physical Board">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exporting-and-milling-the-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporting and Milling the Board
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stuffing-the-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stuffing the Board
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-and-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing and Programming
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-portion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group Portion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Credits
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week09/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Output Devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Mechanical Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Input Devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Molding and Casting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13. Networking and Communications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week14/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. Interface and Application Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. Wildcard Week
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week16/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16. Applications and Implications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week17/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    17. Project Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week18/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. Invention, Intellectual Property, and Income
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Projects
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/final-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Final Project - Na&rsquo;danña&rsquo; Guam
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#personal-pcb-board-design-in-kicad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal PCB Board Design in Kicad
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Personal PCB Board Design in Kicad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pcb-desired-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Desired Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schematic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#footprint-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footprint Assignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-design-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Design Layout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      Physical Board
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Physical Board">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exporting-and-milling-the-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporting and Milling the Board
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stuffing-the-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stuffing the Board
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-and-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing and Programming
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-portion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group Portion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Credits
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="8-electronics-design">8. Electronics Design<a class="headerlink" href="#8-electronics-design" title="Permanent link">&para;</a></h1>
+<p>This week I worked on designing my own circuit board and learning PCB design software.</p>
+<p>You can find the files used this week <a href="../../files/Week08-Files.zip">here</a>.</p>
+<h2 id="personal-pcb-board-design-in-kicad">Personal PCB Board Design in Kicad<a class="headerlink" href="#personal-pcb-board-design-in-kicad" title="Permanent link">&para;</a></h2>
+<p>I chose Kicad as the EDA software to make my circuit board and used <a href="https://www.youtube.com/playlist?list=PLn6004q9oeqGl91KifK6xHGuqvXGb374G">this tutorial</a> as reference.</p>
+<p>Before I started, I needed to import the (Fab Library)[https://gitlab.fabcloud.org/pub/libraries/electronics/kicad] into Kicad.</p>
+<h3 id="pcb-desired-components">PCB Desired Components<a class="headerlink" href="#pcb-desired-components" title="Permanent link">&para;</a></h3>
+<p>For the microcontroller for my PCB, I chose the ATTiny412. In my PCB, I wanted to have a decoupling capacitor between power and ground, an LED that is always on when power is supplied to the board, a programmable LED, an UPDI pin, and 3 pins for connecting either an input or output to the board.</p>
+<h3 id="schematic">Schematic<a class="headerlink" href="#schematic" title="Permanent link">&para;</a></h3>
+<p>It was fairly easy to design the schematic for my board since I already had a rough idea of how the components would connect. I started by adding my desired components and positioned them so that they could connect well, and I connected them respectively. </p>
+<p>Once done with the design, I ran an ERC (electrical rules checker) check, and I received two errors saying the same thing: <strong>Input Power pin not driven by any Output Power pins</strong></p>
+<p>I fixed these errors by adding power flags at the VCC and GND indicators to show that they are a source of power. I ran the ERC again, and there were no more errors.</p>
+<p><img alt="" src="../../images/week08/Week08-PCB-Schematic.jpg" /></p>
+<h3 id="footprint-assignment">Footprint Assignment<a class="headerlink" href="#footprint-assignment" title="Permanent link">&para;</a></h3>
+<p>For each of my components, I needed to assign a footprint to represent its actual shape and the location of each of its wires. Since my lab&rsquo;s components are primarily based off of those in the Fab library, I was able to find all of these components in both my lab and in the footprints provided by the Fab library.</p>
+<p><img alt="" src="../../images/week08/Week08-PCB-Footprints.jpg" /></p>
+<h3 id="pcb-design-layout">PCB Design Layout<a class="headerlink" href="#pcb-design-layout" title="Permanent link">&para;</a></h3>
+<p>After assigning the footprints, I used the PCB board editor to place the components in their real-world positions. I obtained all of the components by using the <em>Update PCB with changes made to schematic</em> tool (on the upper tool bar), which also showed the designated connections between the components.</p>
+<p>Positioning each component was slightly difficult because the layout of the ATTiny412 was not the same as in the schematic. To prevent overlapping traces as much as possible, I changed connections in the schematic with regard to the actual layout of the ATTiny.</p>
+<p>I added traces in tandem with positioning the components, which took a while due to having to change the positions of the traces and aligning the components to others to make the design neater.</p>
+<p>Once I finished the board, I went to the Edge.Cuts layer and drew and outline for the board.</p>
+<p><img alt="" src="../../images/week08/Week08-PCB-ActualDesign.jpg" /></p>
+<p>To check if everything was connected well, I used the DRC (design rules checker). I found that there were a couple of unconnected traces that I had forgotten to delete, so I removed them. There were also 12 warnings showing that the silkscreen of the header pins was clipped by the solder mask. Since this doesn&rsquo;t matter much when actually milling the board, I decided to disregard the warnings.</p>
+<p>To make sure that my board looked good overall, I used the <em>Show 3D viewer window</em> tool to visualize the actual 3D board. There were no apparent problems, so I considered my design to be finished.</p>
+<p><img alt="" src="../../images/week08/Week08-PCB-3DDesign.jpg" /></p>
+<h2 id="physical-board">Physical Board<a class="headerlink" href="#physical-board" title="Permanent link">&para;</a></h2>
+<h3 id="exporting-and-milling-the-board">Exporting and Milling the Board<a class="headerlink" href="#exporting-and-milling-the-board" title="Permanent link">&para;</a></h3>
+<p>To export my design file as a <strong>.gbr</strong> to use in the milling machine software, I pressed <strong>File -&gt; Fabrication Outputs -&gt; Gerbers</strong>. Since this circuit only has front side traces, I unchecked every layer except the copper mask and the edge cuts. I then pressed the <strong>Plot</strong> button and obtained the files from the shown directory.</p>
+<p>I followed the same process for milling these files as in Week 4.</p>
+<p>Some problems encountered while milling were that the piece of copper that I was milling was raised in some places. This caused some traces to not cut fully, and this happened on two separate attempts to make the board. One of the attempts ended up being functional by using a blade to cut the excess copper, but I decided that I would not use it since it may accidentally connect and cause a short.</p>
+<p><img alt="" src="../../images/week08/Week08-PhysPCB-FailedAttempts.JPG" /></p>
+<p>Eventually, I got a board that I liked so I proceeded to stuff that one.</p>
+<p><img alt="" src="../../images/week08/Week08-PhysPCB-Empty.JPG" /></p>
+<h3 id="stuffing-the-board">Stuffing the Board<a class="headerlink" href="#stuffing-the-board" title="Permanent link">&para;</a></h3>
+<p>I used my file in the Kicad PCB editor as reference while stuffing the board. Since all of the components used in my design were Fab components, I was easily able to find them in my lab and add them to my board. Soldering the capacitor was slightly hard, but other than that, I had no major problems soldering.</p>
+<p><img alt="" src="../../images/week08/Week08-PhysPCB-Stuffed.jpeg" /></p>
+<h3 id="testing-and-programming">Testing and Programming<a class="headerlink" href="#testing-and-programming" title="Permanent link">&para;</a></h3>
+<p>I tested the board by plugging it into my Quentorres board from Week 4. I saw that the power LED was on, so I knew that power was successfully transferred to the board.</p>
+<p><img alt="" src="../../images/week08/Week08-PhysPCB-PowerLED.JPG" /></p>
+<p>To program my chip, I used the header pins on my ATTiny board to connect the power pins, ground pins, and UPDI pins (designated pin 6 on both). I used jtag2updi to make the Arduino Uno a programmer and programmed the LED at pin 7 of the ATTiny to blink using it. I used the same code as the Quentorres with the pin changed (but you can find the changed file in Week 8 Files). I originally had an error in uploading the code to my ATTiny, but I realized that I had selected the wrong pin (since pin 7 shown on the ATTiny actually corresponded to pin 4). I tried uploading again, and it worked with no problems.</p>
+<video width="640" height="480" muted controls><source src="../../videos/week08/Week08-PhysPCB-Blink.mp4" type="video/mp4"/>The video is not supported in your browser.</video>
+
+<p>I also wanted to test if the button on my board worked. To do this, I set pin 0 as an input pin and turned on the programmable LED on my board when the button was pressed down. Once again, I did the exact same thing for the Quentorres board, so I used the same code with some pins changed. This upload was immediately successful since I had everything set up already from the blink code.</p>
+<video width="640" height="480" muted controls><source src="../../videos/week08/Week08-PhysPCB-Button.mp4" type="video/mp4"/>The video is not supported in your browser.</video>
+
+<h2 id="group-portion">Group Portion<a class="headerlink" href="#group-portion" title="Permanent link">&para;</a></h2>
+<p>In this week, I worked with Angelina Yang and Kabir Nawaz. You can find our group documentation <a href="https://fabacademy.org/2024/labs/charlotte/assignments/week08c/">here</a>.</p>
+<p>Our task this week was to observe the operation of a microcontroller circuit board. To do this, we used a multimeter and an oscillator to measure voltage, current, and other aspects.</p>
+<p>All of the group members were involved in most of the steps for using these tools. I mainly used the multimeter to measure the voltage supplied to an ATTiny chip and the amount of current running through it. I also measured the voltage drop of an analog LED that gradually got brighter and dimmer.</p>
+<h2 id="reflection">Reflection<a class="headerlink" href="#reflection" title="Permanent link">&para;</a></h2>
+<p>I thought that this week was not too hard, but it was really useful to learn. I learned the basics of circuit design using Kicad and designed my own PCB with it. I feel like while designing the schematic, I solidified my understanding of how circuitry works and was able to apply my knowledge as well. I was slightly confused on how some of the footprints connected, but I eventually figured it out. This week will also likely be useful for the Output and Input weeks since I left 3 pins connecting to the board for whatever use I needed. The board I made might also be used for my final project.</p>
+<h2 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h2>
+<p>All credits are mentioned where they are used respectively.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2024 Connor Cruz - Creative Commons Attribution Non Commercial
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c18c5fb9.min.js"></script>
+      
+    
+  </body>
+</html>
