@@ -6,4 +6,4 @@ This project is an app that can be used by those with dementia to help retain th
 
 ## Weekly Progress
 
-You can find my weekly progress for this project [here]().
+You can find my weekly progress for this project [here](https://connor-cruz.github.io/dementia-app/weekly-progress/).

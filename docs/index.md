@@ -20,5 +20,5 @@ Do you ever think that traditional tic-tac-toe is boring and that you already kn
 
 ## Memory App for Dementia
 
-You can find this project [here](../docs/projects/app-design.md).
+You can find this project [here](https://connor-cruz.github.io/projects/dementia-app/).
 INSERT DETAILS
