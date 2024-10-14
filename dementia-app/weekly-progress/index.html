@@ -361,6 +361,81 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#916-920" class="md-nav__link">
+    <span class="md-ellipsis">
+      9/16 - 9/20
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9/16 - 9/20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-plan_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Plan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cardgamegui-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      CardGameGUI Class
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#923-927" class="md-nav__link">
+    <span class="md-ellipsis">
+      9/23 - 9/27
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9/23 - 9/27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-plan_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Plan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-1011" class="md-nav__link">
+    <span class="md-ellipsis">
+      10/7 - 10/11
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-plan_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Plan
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -528,6 +603,81 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#916-920" class="md-nav__link">
+    <span class="md-ellipsis">
+      9/16 - 9/20
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9/16 - 9/20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-plan_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Plan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cardgamegui-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      CardGameGUI Class
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#923-927" class="md-nav__link">
+    <span class="md-ellipsis">
+      9/23 - 9/27
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9/23 - 9/27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-plan_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Plan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-1011" class="md-nav__link">
+    <span class="md-ellipsis">
+      10/7 - 10/11
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-plan_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Plan
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -577,6 +727,21 @@
 - Other lines are the path to an image of that person
 - The image paths for a person are directly under the heading for that person</p>
 <p>Note that the user will not have to input this manually, as I will later make a system where images can be input and <em>data.txt</em> can be updated based on the user&rsquo;s input.</p>
+<h2 id="916-920">9/16 - 9/20<a class="headerlink" href="#916-920" title="Permanent link">&para;</a></h2>
+<h3 id="general-plan_1">General Plan<a class="headerlink" href="#general-plan_1" title="Permanent link">&para;</a></h3>
+<p>For this week, I wanted to primarily implement a GUI for the card game and have user interactability with that GUI, including clickable cards.</p>
+<h2 id="cardgamegui-class">CardGameGUI Class<a class="headerlink" href="#cardgamegui-class" title="Permanent link">&para;</a></h2>
+<p>I added a new class to the program which created a GUI for the card game. I used Swing and JFrame to make the GUI, with the Frame being stored as an instance variable (Note that the frame was later moved into a more general class). </p>
+<p>I made each of the cards buttons on one layer of a JLayeredPane, with the other layer displaying the information about a person when a match was made. I also created a class CardListener implementing the ActionListener class to tell what to do when a card was clicked. On the other layer of the JLayeredPane, I intended to display the information about a person when a match was made (added next week). Here is the temporary GUI:</p>
+<p>![https://connor-cruz.github.io/images/CardBlank.jpg]</p>
+<p>![https://connor-cruz.github.io/images/CardClicked.jpg]</p>
+<p>Note that the front of the cards aren&rsquo;t fully finished, as I intend for the user to crop the image as desired to fit nicely on the card.</p>
+<h2 id="923-927">9/23 - 9/27<a class="headerlink" href="#923-927" title="Permanent link">&para;</a></h2>
+<h3 id="general-plan_2">General Plan<a class="headerlink" href="#general-plan_2" title="Permanent link">&para;</a></h3>
+<p>I planned for the game to check if the player won the game, as well as to display information and pictures of a person when a match is made. I also wanted to prevent the player from clicking the same card twice when matching.</p>
+<h2 id="107-1011">10/7 - 10/11<a class="headerlink" href="#107-1011" title="Permanent link">&para;</a></h2>
+<h2 id="general-plan_3">General Plan<a class="headerlink" href="#general-plan_3" title="Permanent link">&para;</a></h2>
+<p>I planned to create a class for inserting images and people into data.txt. If time permitted, I also wanted to create a GUI for inserting the images with the ability to let the user navigate their files and select certain images.</p>
 
 
 
