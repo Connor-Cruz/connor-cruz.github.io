@@ -50,3 +50,33 @@ data.txt is formatted as follows:
 - The image paths for a person are directly under the heading for that person
 
 Note that the user will not have to input this manually, as I will later make a system where images can be input and *data.txt* can be updated based on the user's input.
+
+## 9/16 - 9/20
+
+### General Plan
+
+For this week, I wanted to primarily implement a GUI for the card game and have user interactability with that GUI, including clickable cards.
+
+## CardGameGUI Class
+
+I added a new class to the program which created a GUI for the card game. I used Swing and JFrame to make the GUI, with the Frame being stored as an instance variable (Note that the frame was later moved into a more general class). 
+
+I made each of the cards buttons on one layer of a JLayeredPane, with the other layer displaying the information about a person when a match was made. I also created a class CardListener implementing the ActionListener class to tell what to do when a card was clicked. On the other layer of the JLayeredPane, I intended to display the information about a person when a match was made (added next week). Here is the temporary GUI:
+
+![https://connor-cruz.github.io/images/CardBlank.jpg]
+
+![https://connor-cruz.github.io/images/CardClicked.jpg]
+
+Note that the front of the cards aren't fully finished, as I intend for the user to crop the image as desired to fit nicely on the card.
+
+## 9/23 - 9/27
+
+### General Plan
+
+I planned for the game to check if the player won the game, as well as to display information and pictures of a person when a match is made. I also wanted to prevent the player from clicking the same card twice when matching.
+
+## 10/7 - 10/11
+
+## General Plan
+
+I planned to create a class for inserting images and people into data.txt. If time permitted, I also wanted to create a GUI for inserting the images with the ability to let the user navigate their files and select certain images.
