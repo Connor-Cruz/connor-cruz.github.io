@@ -63,9 +63,9 @@ I added a new class to the program which created a GUI for the card game. I used
 
 I made each of the cards buttons on one layer of a JLayeredPane, with the other layer displaying the information about a person when a match was made. I also created a class CardListener implementing the ActionListener class to tell what to do when a card was clicked. On the other layer of the JLayeredPane, I intended to display the information about a person when a match was made (added next week). Here is the temporary GUI:
 
-![https://connor-cruz.github.io/images/CardBlank.jpg]
+![](../images/CardBlank.jpg)
 
-![https://connor-cruz.github.io/images/CardClicked.jpg]
+![](../images/CardClicked.jpg)
 
 Note that the front of the cards aren't fully finished, as I intend for the user to crop the image as desired to fit nicely on the card.
 
